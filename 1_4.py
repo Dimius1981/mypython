@@ -8,12 +8,10 @@ num = int(input("Введите целое положительное число
 if num >= 0:
     my_max = num % 10
     while num:
-        d = num % 10;
+        d = num % 10
         if d > my_max:
             my_max = d
         num //= 10
     print(f"Самая большая цифра в этом числе: {my_max}")
 else:
     print(f"Нужно ввести положительное число")
-
-
